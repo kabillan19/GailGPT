@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 import random
 import smtplib
 from email.mime.text import MIMEText
@@ -6,7 +7,7 @@ from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 from langchain_groq import ChatGroq
 from sentence_transformers import SentenceTransformer, util
-import numpy as np
+
 
 # Initialize Streamlit app
 st.title("GailGPT\nIntelligent Enterprise Assistant")
