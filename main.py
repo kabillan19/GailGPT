@@ -48,7 +48,7 @@ def validate_otp(user_otp):
         st.success("OTP validated successfully!")
         st.rerun()  # Force a rerun to update the app state
     else:
-        st.error("Invalid OTP. Please try again.")
+        st.error("Invalid OTP, Please try again later.")
 
 # Function to check if the user's question is related to HR, IT, or Company Events
 def is_relevant_question(question, embedding_model, category_embeddings):
