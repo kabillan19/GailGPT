@@ -99,11 +99,11 @@ def read_pdf(file):
 memory = ConversationBufferWindowMemory(k=5)
 
 # Groq API key
-groq_api_key = "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"
+groq_api_key = "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"
 
 if groq_api_key:
     # Initialize Groq Langchain chat object
-    model_name = "llama3-70b-8192"
+    model_name = "llama-3.2-1b-preview"
     groq_chat = ChatGroq(
         groq_api_key=groq_api_key,
         model_name=model_name
